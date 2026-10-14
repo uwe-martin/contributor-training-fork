@@ -64,6 +64,18 @@ Functional Requirements
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your component
 
+.. comp_req:: Report heartbeat status
+   :id: comp_req__component_example__heartbeat_status
+   :reqtype: Functional
+   :security: NO
+   :safety: QM
+   :derived_from: feat_req__example_feature__example_req
+   :satisfied_by: comp__mod_temp_component_example_1
+   :status: valid
+   :version: 1
+
+   The Component shall report its heartbeat status to the module once per cycle.
+
 Assumption of Use Requirements
 ------------------------------
 
