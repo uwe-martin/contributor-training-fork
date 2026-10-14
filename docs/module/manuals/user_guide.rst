@@ -14,10 +14,10 @@
 
 .. _user_manual:
 
-[Module Name] User Manual
-=========================
+Training_Module User Guide
+==========================
 
-.. document:: [Module Name] User Manual
+.. document:: Training_Module User Guide
    :id: doc__user_manual
    :status: draft
    :version: 1
