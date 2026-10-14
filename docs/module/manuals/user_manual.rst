@@ -32,7 +32,7 @@
 Overview
 ========
 
-This user manual provides comprehensive guidance for using the [Your Module Name] module from an end customer perspective.
+This user manual provides comprehensive guidance for using the Training_Module module from an end customer perspective.
 It covers installation, configuration, basic usage, and best practices for integrating this module
 into your project.
 
@@ -47,7 +47,7 @@ Environment Needs
 Basic needed software environment for the module development and usage:
 
 * **C++**: C++17 or later
-* **Rust**: 1.70 or later (if Rust support is included)
+* **Rust**: 1.70 or later
 * **Build System**: Bazel 6.0 or later
 * **Operating Systems**: Linux, QNX
 
