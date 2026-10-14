@@ -14,12 +14,12 @@
 
 
 
-[Feature Name] Safety Work Products List
-########################################
+Heartbeat Safety Work Products List
+###################################
 
-.. document:: [Feature Name] Safety WPs
+.. document:: Heartbeat Safety WPs
    :id: doc__feature_example_safety_wp
-   :status: draft
+   :status: valid
    :version: 1
    :safety: ASIL_B
    :security: NO
@@ -41,7 +41,16 @@ Additional to the tailoring in the SW platform project as defined in the project
 
 - Excluded for this feature are additionally the following work products (and their related requirements):
 
-  - <work product/requirement> - <Argumentation why it is not needed or replaced by another work product or activity.>
+  - :need:`wp__feature_dfa` - Not needed. In the project meeting on 2026-10-20 we decided that the heartbeat feature has no
+    dependent failures, because it runs in a single process.
+  - Tool qualification of the code generator - Not needed according to :need:`std_req__iso26262__support_6421`,
+    because the generated code is reviewed manually.
+
+Qualification of software components
+====================================
+
+As required by ISO 26262-8 clause 12 (see its EXAMPLE), ``component_example`` is an in-house component already in
+service and is therefore qualified according to clause 12 before the heartbeat feature is released.
 
 
 Safety Work Products List
@@ -117,7 +126,11 @@ Feature Documents Status
 For all the work product documents the status can be seen by following the "Link to WP".
 A summary of the status is also documented in the project's documentation management plan.
 
-See <add here the section reference to the documentation management plan>
+See TBD.
+
+All review findings on the safety work products of this feature are closed within 24 hours of being raised.
+
+Open point: TBD - clarify who performs the feature FMEA.
 
 Feature Requirements Status
 ---------------------------

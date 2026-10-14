@@ -105,3 +105,43 @@ Hints
 
 .. needextend:: "c.this_doc()"
    :+tags: component_name
+
+Heartbeat Requirements
+----------------------
+
+.. stkh_req:: Heartbeat supervision
+   :id: stkh_req__mtfn__heartbeat
+   :reqtype: Functional
+   :safety: QM
+   :security: NO
+   :rationale: needed for the heartbeat feature
+   :status: valid
+   :version: 1
+   :valid_from: v0.1.0
+
+   The platform shall supervise that its components are alive.
+
+.. feat_req:: Heartbeat supervision
+   :id: feat_req__component_example__hb_supervision
+   :reqtype: Functional
+   :security: NO
+   :safety: QM
+   :derived_from: stkh_req__mtfn__heartbeat
+   :status: valid
+   :version: 1
+   :valid_from: v0.1.0
+   :satisfied_by: feat__mtef
+
+   The feature shall supervise the heartbeat of each registered component.
+
+.. comp_req:: Detect a missing heartbeat
+   :id: comp_req__component_example__hb_missing
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :derived_from: feat_req__component_example__hb_supervision
+   :satisfied_by: comp__mod_temp_component_example_1
+   :status: valid
+   :version: 1
+
+   The Component shall detect a missing heartbeat within two cycles.
