@@ -44,7 +44,7 @@ For build and test of the module itself, please refer to the :ref:`quick-start-b
 Environment Needs
 =================
 
-Basic needed software environment for the module development and usage:
+Basic needed software environment for the module development and usage: 
 
 * **C++**: C++17 or later
 * **Rust**: 1.70 or later (if Rust support is included)

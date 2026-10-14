@@ -19,7 +19,7 @@
 
 .. document:: [Module Name] Security Manual
    :id: doc__mod_temp_module_name_security_manual
-   :status: draft
+   :status: released
    :version: 1
    :safety: ASIL_B
    :security: YES
