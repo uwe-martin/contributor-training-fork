@@ -12,12 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-[Feature Name] Assumptions of Use
-=================================
+Heartbeat Assumptions of Use
+============================
 
-.. document:: [Feature Name] Feature AoU
+.. document:: Heartbeat Feature AoU
    :id: doc__feature_name_feat_aou
-   :status: draft
+   :status: valid
    :version: 1
    :safety: ASIL_B
    :security: NO
@@ -37,13 +37,24 @@
 AoU
 ---
 
-.. code-block:: rst
+.. aou_req:: Restart a failed component
+   :id: aou_req__feature_name__hb_restart
+   :reqtype: Process
+   :security: NO
+   :safety: ASIL_B
+   :status: valid
+   :version: 1
 
-   .. aou_req:: Some Other Title
-      :id: aou_req__feature_name__some_other_title
-      :reqtype: Process
-      :security: NO
-      :safety: ASIL_B
-      :status: invalid
+   The integrator shall restart a component whose heartbeat is missing within 1 microsecond.
 
-      The Feature User shall do xyz to use the feature safely.
+.. aou_req:: Configure the heartbeat period
+   :id: aou_req__feature_name__hb_period
+   :reqtype: Process
+   :security: NO
+   :safety: ASIL_B
+   :status: valid
+   :version: 1
+
+   The integrator shall configure a heartbeat period of TBD ms.
+
+No further Assumptions of Use are needed; we agreed on this with the integrator in the call on 2026-10-22.
