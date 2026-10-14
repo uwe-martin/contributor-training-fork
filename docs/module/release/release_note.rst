@@ -12,12 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-[Module Name] Release Note
-==========================
+Training_Module Relase Note
+===========================
 
 .. note:: Document header
 
-.. document:: [Module Name] Release Note
+.. document:: Training_Module Relase Note
    :id: doc__mod_temp_module_name_release_note
    :status: draft
    :version: 1
@@ -36,10 +36,10 @@
 
 
 
-| **Module Name:** [Module Name]
-| **Release Tag:** vX.Y.Z
-| **Origin Release Tag:** vU.V.W
-| **Release Date:** YYYY-MM-DD
+| **Module Name:** Training_Module
+| **Release Tag:** v0.1.0
+| **Origin Release Tag:** none (first release)
+| **Release Date:** 2026-11-02
 
 
 Overview
@@ -100,9 +100,9 @@ This release note is based on the verification as documented in module verificat
 Known Issues
 ------------
 
-- **Issue 1:** Brief description of the known issue. Justification regarding safety impact.
-- **Issue 2:** Brief description of the known issue. Justification regarding safety impact.
-- **Issue 3:** Brief description of the known issue. Justification regarding safety impact.
+The following issues are known for this release and will be adressed in v0.2.0:
+- **Issue 1:** A missed cycle is not reported seperately; the consumer detects it by its own timeout, see `score/component_example`. No safety impact.
+- **Issue 2:** The component example has no integration test on target hardware yet. No safety impact, because the module is not released for production.
 
 Known Vulnerabilities
 ---------------------
