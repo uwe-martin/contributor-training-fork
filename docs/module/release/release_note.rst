@@ -30,7 +30,7 @@
     The above directive must be updated according to your Module.
 
     - Modify ``Your Module Name`` to be your Module Name
-    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``release_note``
+    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and followed by ``release_note``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
