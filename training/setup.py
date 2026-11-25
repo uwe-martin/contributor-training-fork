@@ -219,7 +219,7 @@ def main() -> int:
 
     role = ROLES[args.role]
     push = not args.dry_run
-    url = args.clone_url or f"git@github.com:{args.repo}.git"
+    url = args.clone_url or f"https://github.com/{args.repo}.git"
 
     if not args.clone_url:
         info = json.loads(run(["gh", "api", f"repos/{args.repo}"]))
