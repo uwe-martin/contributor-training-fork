@@ -20,4 +20,4 @@ One page per participant, ``<name>.rst`` in this folder. Add your page to the li
 .. toctree::
    :maxdepth: 1
 
-uwe-martin
+   uwe-martin
