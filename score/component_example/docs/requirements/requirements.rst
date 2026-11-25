@@ -28,7 +28,7 @@
     The above directive must be updated according to your Component.
 
     - Modify ``Component Name`` to be your Component Name
-    - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and followed by ``_requirements``
+    - Modify ``id`` to be your Component Name in lower snake case preceded by ``doc__`` and followed by ``_requirements``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 
@@ -38,27 +38,25 @@
 Functional Requirements
 -----------------------
 
-.. code-block:: rst
+.. comp_req:: Some Title
+   :id: comp_req__mod_temp_component_name__some_title
+   :reqtype: Functional
+   :security: YES
+   :safety: ASIL_B
+   :derived_from: feat_req__example_feature__example_req
+   :status: valid
+   :version: 1
+   :satisfied_by: comp__mod_temp_component_name_template
 
-   .. comp_req:: Some Title
-      :id: comp_req__mod_temp_component_name__some_title
-      :reqtype: Process
-      :security: YES
-      :safety: ASIL_B
-      :derived_from: feat_req__example_feature__example_req
-      :status: valid
-      :version: 1
-      :satisfied_by: comp__mod_temp_component_name_template
+   The component shall return the greeting "Hello, <name>!" for a given name through make_hello_message.
 
-      The Component shall do xyz to another component to bring it to this condition at this time
-
-      Note: (optional, not to be verified)
+   Note: (optional, not to be verified)
 
 .. attention::
     The above directive must be updated according to your component requirements.
 
     - Replace the example content by the real content for your first requirement
-    - Set ``derived_from`` with links to Feature requirements
+    - ``derived_from`` is an optional link to Feature requirements; include it when applicable
     - Set ``satisfied_by`` with a link to the right Component id
     - Set ``safety`` and ``security`` to the right value
     - Set the status to valid and start the review/merge process

@@ -21,7 +21,7 @@
   :status: draft
   :version: 1
   :safety: ASIL_B
-  :security: YES
+  :security: NO
   :realizes: wp__fdr_reports
   :tags: template
 
@@ -29,7 +29,7 @@
     The above directive must be updated according to your Module.
 
     - Modify ``Your Module Name`` to be your Module Name
-    - Modify ``id`` to be your Module Name in lower snake case preceded by ``doc__`` and followed by ``_safety _analysis_fdr``
+    - Modify ``id`` to be your Module Name in lower snake case preceded by ``doc__`` and followed by ``_safety_analysis_fdr``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety``, ``security`` and ``tags`` according to your needs
 

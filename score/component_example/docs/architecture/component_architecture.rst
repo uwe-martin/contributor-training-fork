@@ -30,7 +30,7 @@
     The above directive must be updated according to your needs.
 
     - Modify ``Component Name`` to be your Component Name
-    - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and followed by ``_architecture``
+    - Modify ``id`` to be your Component Name in lower snake case preceded by ``doc__`` and followed by ``_architecture``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
@@ -76,6 +76,10 @@ The components are designed to cover the expectations from the feature architect
 (i.e. if already exists a definition it should be taken over and enriched).
 
 A component can optional also consist of lower level components to further structure the architecture. The component and its static views can also optionally use interfaces provided by other components.
+
+.. note::
+   The ``fulfils`` link is optional on architecture views and interfaces. Include it only when the element fulfills a
+   component requirement. The ``uses`` link is optional when an architecture view uses an interface.
 
 .. code-block:: rst
 

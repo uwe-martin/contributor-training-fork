@@ -34,7 +34,7 @@
     The above directive must be updated according to your Component.
 
     - Modify ``Component Name`` to be your Component Name
-    - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and succeeded by ``_dfa``
+    - Modify ``id`` to be your Component Name in lower snake case preceded by ``doc__`` and followed by ``_dfa``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
@@ -199,9 +199,14 @@ For all identified applicable failure initiators, the DFA is performed in the fo
        :mitigated_by: <ID from Component Requirement | ID from AoU Component Requirement>
        :mitigation_issue: <ID from Issue Tracker>
        :sufficient: <yes|no>
-       :status: <valid|invalid>
+       :status: <draft|valid|invalid>
 
 .. note::   Argument is inside the 'content'. Therefore content is mandatory.
+
+.. note::
+   ``safety_relevant`` and ``mitigation_issue`` are optional. The ``mitigated_by`` link is optional while the DFA is
+   draft or invalid, but is required when its status is valid.
+   Use ``draft`` as long as the analysis is not finished, e.g. only a ``mitigation_issue`` is linked.
 
 .. attention::
     The above directive must be updated according to your component DFA.
