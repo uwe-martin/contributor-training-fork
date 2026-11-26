@@ -834,6 +834,30 @@ b8cb888e ci: Removed docs workflows
 a6e21db1 addressed PR comments
 69f21408 template: initial template</p>
 </section>
+<section id="build-the-documentation-clean-and-read-the-result">
+<h2>#9 Build the documentation clean and read the result<a class="headerlink" href="#build-the-documentation-clean-and-read-the-result" title="Link to this heading">#</a></h2>
+<p>Q: How many warnings does the build report?
+A: The build reports 1 warning: WARNING: For repository ‘rules_cc’, the root module requires module version <a class="reference external" href="mailto:rules_cc&#37;&#52;&#48;0&#46;2&#46;18">rules_cc<span>&#64;</span>0<span>&#46;</span>2<span>&#46;</span>18</a>, but got <a class="reference external" href="mailto:rules_cc&#37;&#52;&#48;0&#46;2&#46;25">rules_cc<span>&#64;</span>0<span>&#46;</span>2<span>&#46;</span>25</a> in the resolved dependency graph.</p>
+<p>Q: Where is the list written?
+A: It’s written to the console output (stderr)</p>
+<p>Q: Why do we delete _build first?
+A: We delete the _build directory to ensure a clean build environment, removing any previous build artifacts that might affect the current build results.
+The build process works incrementally. So stale artifacts from previous builds could lead to incorrect or misleading results if not removed.</p>
+<p>Q: Run pre-commit run –all-files and list the hooks it runs. For each hook: would a violation also make bazel run //:docs fail, or does only pre-commit find it?
+A: The pre-commit hooks are as follows:
+<a class="reference external" href="mailto:uwe&#37;&#52;&#48;ATGRZWN121869">uwe<span>&#64;</span>ATGRZWN121869</a>:~/contributor-training-fork$ pre-commit run –all-files
+fix end of files…………………………………………………Passed
+trim trailing whitespace………………………………………….Passed
+check that scripts with shebangs are executable……………………..Passed
+check that executables have shebangs……………………………….Passed
+check for added large files……………………………………….Passed
+Check and fix copyright headers with cr_checker……………………..Passed
+reuse lint-file………………………………………………….Passed
+yamlfmt…………………………………………………………Passed
+bazel mod tidy…………………………………………………..Passed
+bazel mod deps lockfile check……………………………………..Passed
+Only pre-commit finds these issues, and they do not cause the Bazel build for //:docs to fail.</p>
+</section>
 </section>
 
 
@@ -877,6 +901,7 @@ a6e21db1 addressed PR comments
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#progress">Progress</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bring-your-repository-up-to-date-with-its-upstream">#7 Bring your repository up to date with its upstream</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-documentation-clean-and-read-the-result">#9 Build the documentation clean and read the result</a></li>
 </ul>
   </nav></div>
 
