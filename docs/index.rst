@@ -159,3 +159,11 @@ The Release Notes document the changes, known issues and compatibility informati
    :maxdepth: 1
 
    release_notes/index
+
+Participants
+------------
+
+.. toctree::
+   :maxdepth: 1
+
+   participants/index
