@@ -30,7 +30,7 @@
     The above directive must be updated according to your Module.
 
     - Modify ``Your Module Name`` to be your Module Name
-    - Modify ``id`` to be your Module Name in upper snake case preceded by ``doc_`` and succeeded by ``safety_plan``
+    - Modify ``id`` to be your Module Name in lower snake case preceded by ``doc__`` and followed by ``_safety_plan``
     - Adjust ``status`` to be ``valid``
     - Adjust ``safety`` and ``tags`` according to your needs
 
@@ -47,7 +47,6 @@ Functional Safety Management Scope
 
 This Safety Plan's scope is a SW module of the SW platform <link to module documentation in platform/modules/<modulename>/index.rst>.
 The module consists of one or more SW components and will be qualified as a SEooC.
-Training_Module is classified as QM; no ASIL is allocated to the module.
 
 Functional Safety Management Roles
 ==================================
@@ -133,6 +132,11 @@ Module Work products List
           - :need:`gd_temp__rel_mod_rel_note`
           - :ndf:`copy('status', need_id='gd_temp__rel_mod_rel_note')`
           - :need:`doc__mod_temp_module_name_release_note`
+
+        * - :need:`wp__module_user_manual`
+          - :need:`gd_temp__rel_mod_user_manual`
+          - :ndf:`copy('status', need_id='gd_temp__rel_mod_user_manual')`
+          - :need:`doc__mod_temp_module_name_user_manual`
 
 Component <name> Work products List
 -----------------------------------

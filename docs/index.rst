@@ -12,11 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Training_Module Documentation
+Module Template Documentation
 =============================
 
-Training_Module is a fictive software module used to train Quality, Safety and Security Managers.
-It follows the S-CORE module template and processes but implements no real functionality.
+<Brief description of the module and the implemented feature(s).>
 
 <Further documentation of the module
 and the implemented feature(s) should be added in the respective sections of the documentation
@@ -29,12 +28,11 @@ templates and guidelines.>
    :glob:
 
    template/index
-   participants/index
 
 Feature Documentation
 ---------------------
 
-The Feature documentation covers the feature-level definition of Training_Module, including architecture and safety planning artifacts.
+The Feature documentation covers the feature-level definition of <module name>, including architecture and safety planning artifacts.
 
 .. toctree::
    :maxdepth: 1
@@ -155,9 +153,17 @@ The configuration enables conditional build behavior:
 Release Notes
 -------------
 
-The Module documentation covers the module-level view, including architecture, safety management documents, and the user manual.
+The Release Notes document the changes, known issues and compatibility information of each module release.
 
 .. toctree::
    :maxdepth: 1
 
    release_notes/index
+
+Participants
+------------
+
+.. toctree::
+   :maxdepth: 1
+
+   participants/index
