@@ -15,7 +15,7 @@
 Participants
 ============
 
-One page per participant, ``<name>.rst`` in this folder. Add your page to the list below.
+One page per participant, ``<name>.rst`` in this folder. Add your own page to the list below.
 
 .. toctree::
    :maxdepth: 1
