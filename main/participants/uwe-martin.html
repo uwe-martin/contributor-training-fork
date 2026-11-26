@@ -858,6 +858,13 @@ bazel mod tidy…………………………………………………..Passed
 bazel mod deps lockfile check……………………………………..Passed
 Only pre-commit finds these issues, and they do not cause the Bazel build for //:docs to fail.</p>
 </section>
+<section id="repair-the-defect-branches">
+<h2>#10 Repair the defect branches<a class="headerlink" href="#repair-the-defect-branches" title="Link to this heading">#</a></h2>
+<p>After building the branch defect/build-3, when looking at the module manuals in my browser,
+I see a lot of “Attention” boxes pointing out that placeholders have not been filled in.
+This is not caught by the build because the placeholders are valid syntax.
+Hence, the additional need to have “green” CI.</p>
+</section>
 </section>
 
 
@@ -902,6 +909,7 @@ Only pre-commit finds these issues, and they do not cause the Bazel build for //
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#progress">Progress</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bring-your-repository-up-to-date-with-its-upstream">#7 Bring your repository up to date with its upstream</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-documentation-clean-and-read-the-result">#9 Build the documentation clean and read the result</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repair-the-defect-branches">#10 Repair the defect branches</a></li>
 </ul>
   </nav></div>
 
