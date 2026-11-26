@@ -292,3 +292,31 @@ b8cb888e ci: Removed docs workflows
 32b5df34 Merge pull request #1 from qorix-group/dcalavrezo_new_template
 a6e21db1 addressed PR comments
 69f21408 template: initial template
+
+
+#9 Build the documentation clean and read the result
+----------------------------------------------------
+Q: How many warnings does the build report?
+A: The build reports 1 warning: WARNING: For repository 'rules_cc', the root module requires module version rules_cc@0.2.18, but got rules_cc@0.2.25 in the resolved dependency graph.
+
+Q: Where is the list written?
+A: It's written to the console output (stderr)
+
+Q: Why do we delete _build first?
+A: We delete the _build directory to ensure a clean build environment, removing any previous build artifacts that might affect the current build results.
+The build process works incrementally. So stale artifacts from previous builds could lead to incorrect or misleading results if not removed.
+
+Q: Run pre-commit run --all-files and list the hooks it runs. For each hook: would a violation also make bazel run //:docs fail, or does only pre-commit find it?
+A: The pre-commit hooks are as follows:
+uwe@ATGRZWN121869:~/contributor-training-fork$ pre-commit run --all-files
+fix end of files.........................................................Passed
+trim trailing whitespace.................................................Passed
+check that scripts with shebangs are executable..........................Passed
+check that executables have shebangs.....................................Passed
+check for added large files..............................................Passed
+Check and fix copyright headers with cr_checker..........................Passed
+reuse lint-file..........................................................Passed
+yamlfmt..................................................................Passed
+bazel mod tidy...........................................................Passed
+bazel mod deps lockfile check............................................Passed
+Only pre-commit finds these issues, and they do not cause the Bazel build for //:docs to fail.
