@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>uwe-martin &#8212; Module Template Project  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score.css?v=5737673c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=6a6a7ab0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=f381fa98" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'participants/uwe-martin';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.24.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://uwe-martin.github.io/contributor-training-fork/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Participants" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.0.0" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/Eclipse-S-CORE-colour-horizontal.png" class="logo__image only-light" alt="Eclipse S-CORE documentation - Home"/>
+    <img src="../_static/Eclipse-S-CORE-dark.png" class="logo__image only-dark pst-js-only" alt="Eclipse S-CORE documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../template/index.html">
+    Template Information
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
+    [Feature Name]
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../module/index.html">
+    Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../verification_report/module_verification_report.html">
+    Verification Report
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../components/index.html">
+    Components
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="index.html">
+    Participants
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../template/index.html">
+    Template Information
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
+    [Feature Name]
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../module/index.html">
+    Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../verification_report/module_verification_report.html">
+    Verification Report
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../components/index.html">
+    Components
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../release_notes/index.html">
+    Release notes
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Participants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">uwe-martin</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Participants</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">uwe-martin</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="uwe-martin">
+<h1>uwe-martin<a class="headerlink" href="#uwe-martin" title="Link to this heading">#</a></h1>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Ubuntu 24.04: WSL2</p></li>
+<li><p>VS Code: 1.148.0</p></li>
+<li><p>Bazel: 9.3.3</p></li>
+<li><p>gh: 2.45.0</p></li>
+<li><p>Python: 3.12.3</p></li>
+<li><p>pre-commit: 3.6.2</p></li>
+</ul>
+</section>
+<section id="progress">
+<h2>Progress<a class="headerlink" href="#progress" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Ubuntu, VS Code, Bazelisk, gh, and pre-commit: &lt;already in place&gt;</p></li>
+<li><p>gh authentication and GitHub SSH key: &lt;already in place&gt;</p></li>
+<li><p>Eclipse account, signed ECA, and GitHub username linked: &lt;already in place&gt;</p></li>
+<li><p>Repository clone and upstream remote: &lt;already in place&gt;</p></li>
+<li><p>IDE support and live preview: &lt;done&gt;</p></li>
+<li><p>Issues enabled in repository settings: &lt;done&gt;</p></li>
+</ul>
+</section>
+<section id="bring-your-repository-up-to-date-with-its-upstream">
+<h2>#7 Bring your repository up to date with its upstream<a class="headerlink" href="#bring-your-repository-up-to-date-with-its-upstream" title="Link to this heading">#</a></h2>
+<p>Option 1 syncs changes of an additional remote to the local repository.
+Option 2 syncs two remote repositories without involving the local repository.
+Option 1 is for consuming updates from a repo one does not contribute back to.
+Option 2 provides the basis for contributing back to the original.
+In S-CORE, contributors don’t push directly to eclipse-score/* repos.
+They fork, make changes, and open PRs from their fork.
+Commits merged from module template repo:
+9222c493 (upstream/main) docs: add the maturity option to the mod needs (DR-003) (#263)
+8289aa4b chore(deps): update dependency score_cpp_policies to v0.1.3 (#262)
+cf6ef138 chore(docker): bump eclipse-score/devcontainer (#261)
+b248544e chore(deps): update dependency score_rules_imagefs to v0.2.0 (#260)
+100393f8 chore(deps): update dependency score_devcontainer to v1.14.0 (#259)
+4bb6892f chore(deps): update dependency score_docs_as_code to v9.1.1 (#257)
+9afc5f61 chore(deps): update dependency score_toolchains_rust to v0.10.1 (#256)
+2257ec52 chore(deps): update dependency score_docs_as_code to v9.1.0 (#255)
+04e5afec chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#254)
+28f705f2 Add draft status to safety analysis templates (#253)
+1e2a80d4 add common source folder (#245)
+4ddc1765 chore(docker): bump eclipse-score/devcontainer (#252)
+c62e790a docs: clarify optional Sphinx-Needs attributes (#249)
+980d7e68 chore(deps): update dependency score_devcontainer to v1.13.0 (#251)
+921dc7b4 chore(deps): update dependency score_docs_as_code to v9 (#250)
+916c57af chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#247)
+a33350e3 chore(deps): update dependency score_bazel_platforms to v1.3.0 (#246)
+d55c7d1b feat: add requirement traceability (#234)
+407bcad5 chore(docker): bump eclipse-score/devcontainer from v1.11.4 to v1.12.0 in /.devcontainer in the docker group across 1 directory (#244)
+d64a7b8a chore(deps): Bump EBcLfSA SDK to version 2.0.0-beta2 (#243)
+2a5748f9 chore(deps): update dependency score_devcontainer to v1.12.0 (#242)
+3194f2db chore(deps): update dependency score_docs_as_code to v8.7.0 (#240)
+78a79d08 chore(bazel): align toolchain configuration structure (#241)
+7b2eb704 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml from 4ab321e611c43ffafe579ac37c17e33dd041f760 to d768523bcb4ce716e2e56f9a8e3b2c25fcd30b06 in the github-actions group (#237)
+0b5e604c Align Security work products with ISO SAE 21434 and fix template inconsistencies (#236)
+181b6a01 (tag: v0.2.1) fix(github): remove repository issue templates (#228)
+3a44e8e6 chore(docker): bump eclipse-score/devcontainer (#235)
+aa24d960 chore(bazel): keep the declared version at 8.8.2 or newer (#233)
+a69cf04f Update dependency score_devcontainer to v1.11.4 (#232)
+23642c3e fix(github): remove repository pull request templates (#229)
+07525672 docs: align component request template with existing CRs (#231)
+34b8e7d9 fix(ci): use docker:// prefix for gitlint action image (#227)
+ece97a52 docs: fix bazel_dep example in user manual (#230)
+650f31ac chore(ci): use Ubuntu 24.04 GitHub Actions runners (#221)
+f7c72f3b chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#222)
+7a2d8eee Update dependency score_docs_as_code to v8.6.0 (#220)
+b2b37204 chore(docker): bump eclipse-score/devcontainer (#219)
+fdff1e6e small fixes (#218)
+e66e3333 add valid_inspected (#217)
+4c526e23 Update module bazel (#216)
+ef59e1a9 Update dependency score_tooling to v1.3.1 (#214)
+c0f83ea5 (tag: v0.2.0) Add release notes v020 (#213)
+0f0f7336 Update dependency score_devcontainer to v1.11.3 (#212)
+deaa8856 Update dependency score_docs_as_code to v8.5.1 (#211)
+a9786bbd Update dependency score_cpp_policies to v0.1.2 (#207)
+f37ce237 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#209)
+b0216622 Update dependency score_docs_as_code to v8.5.0 (#208)
+45726e1f Change to valid_inspected state (#206)
+3af6e874 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#205)
+uwe&#64;ATGRZWN121869:~/contributor-training-fork$ git log –oneline main..upstream/main
+9222c493 (upstream/main) docs: add the maturity option to the mod needs (DR-003) (#263)
+8289aa4b chore(deps): update dependency score_cpp_policies to v0.1.3 (#262)
+cf6ef138 chore(docker): bump eclipse-score/devcontainer (#261)
+b248544e chore(deps): update dependency score_rules_imagefs to v0.2.0 (#260)
+100393f8 chore(deps): update dependency score_devcontainer to v1.14.0 (#259)
+4bb6892f chore(deps): update dependency score_docs_as_code to v9.1.1 (#257)
+9afc5f61 chore(deps): update dependency score_toolchains_rust to v0.10.1 (#256)
+2257ec52 chore(deps): update dependency score_docs_as_code to v9.1.0 (#255)
+04e5afec chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#254)
+28f705f2 Add draft status to safety analysis templates (#253)
+1e2a80d4 add common source folder (#245)
+4ddc1765 chore(docker): bump eclipse-score/devcontainer (#252)
+c62e790a docs: clarify optional Sphinx-Needs attributes (#249)
+980d7e68 chore(deps): update dependency score_devcontainer to v1.13.0 (#251)
+921dc7b4 chore(deps): update dependency score_docs_as_code to v9 (#250)
+916c57af chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#247)
+a33350e3 chore(deps): update dependency score_bazel_platforms to v1.3.0 (#246)
+d55c7d1b feat: add requirement traceability (#234)
+407bcad5 chore(docker): bump eclipse-score/devcontainer from v1.11.4 to v1.12.0 in /.devcontainer in the docker group across 1 directory (#244)
+d64a7b8a chore(deps): Bump EBcLfSA SDK to version 2.0.0-beta2 (#243)
+2a5748f9 chore(deps): update dependency score_devcontainer to v1.12.0 (#242)
+3194f2db chore(deps): update dependency score_docs_as_code to v8.7.0 (#240)
+78a79d08 chore(bazel): align toolchain configuration structure (#241)
+7b2eb704 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml from 4ab321e611c43ffafe579ac37c17e33dd041f760 to d768523bcb4ce716e2e56f9a8e3b2c25fcd30b06 in the github-actions group (#237)
+0b5e604c Align Security work products with ISO SAE 21434 and fix template inconsistencies (#236)
+181b6a01 (tag: v0.2.1) fix(github): remove repository issue templates (#228)
+3a44e8e6 chore(docker): bump eclipse-score/devcontainer (#235)
+aa24d960 chore(bazel): keep the declared version at 8.8.2 or newer (#233)
+a69cf04f Update dependency score_devcontainer to v1.11.4 (#232)
+23642c3e fix(github): remove repository pull request templates (#229)
+07525672 docs: align component request template with existing CRs (#231)
+34b8e7d9 fix(ci): use docker:// prefix for gitlint action image (#227)
+ece97a52 docs: fix bazel_dep example in user manual (#230)
+650f31ac chore(ci): use Ubuntu 24.04 GitHub Actions runners (#221)
+f7c72f3b chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#222)
+7a2d8eee Update dependency score_docs_as_code to v8.6.0 (#220)
+b2b37204 chore(docker): bump eclipse-score/devcontainer (#219)
+fdff1e6e small fixes (#218)
+e66e3333 add valid_inspected (#217)
+4c526e23 Update module bazel (#216)
+ef59e1a9 Update dependency score_tooling to v1.3.1 (#214)
+c0f83ea5 (tag: v0.2.0) Add release notes v020 (#213)
+0f0f7336 Update dependency score_devcontainer to v1.11.3 (#212)
+deaa8856 Update dependency score_docs_as_code to v8.5.1 (#211)
+a9786bbd Update dependency score_cpp_policies to v0.1.2 (#207)
+f37ce237 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#209)
+b0216622 Update dependency score_docs_as_code to v8.5.0 (#208)
+45726e1f Change to valid_inspected state (#206)
+3af6e874 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#205)
+b60778b0 chore(docker): bump eclipse-score/devcontainer (#204)
+f1ff0065 Update dependency score_docs_as_code to v8.4.0 (#203)
+70552239 chore(devcontainer): update Bazel dependency to 1.11.2 (#201)
+492cc49a Add score-qnx-aarch64 (#199)
+52caa07f chore(devcontainer): sync standard SCORE tool launcher (#200)
+775aad3c cleanup templates (#198)
+f9532a9d Add realisation link for User Manual (#195)
+c8401feb Adapt and improve arch inspection checklist (#197)
+332b99a1 grammar and sentence corrections in the checklist (#196)
+1bebef78 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#194)
+f6f38055 Addition of doc mgmt plan (#193)
+0d7b538d fix of safety analysis templates (#189)
+fce71a82 chore(docs): update score_docs_as_code gitignore configuration (#188)
+eb8e24d5 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#187)
+8bf7d0d0 feat(toolchain): centralize S-CORE toolchain configurations and compiler warning policies (#180)
+cab09dac Update dependency score_bazel_cpp_toolchains to v1.0.4 (#186)
+c1268637 Update dependency score_docs_as_code to v8.3.0 (#184)
+c4d4ad09 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#183)
+0800f9e5 Update dependency score_docs_as_code to v8.2.0 (#182)
+056be3ae Update dependency score_devcontainer to v1.11.1 (#181)
+6e1db31d chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#179)
+2cdd558e improvement of module verification report (#178)
+7f788f9a chore(bazel): align development-only dependencies (#175)
+cfe6943a add example for auto generated module verification report (#166)
+03c00dd4 Refactor tests and improve component structure (#173)
+cefdc45a Update dependency score_docs_as_code to v8.1.2 (#172)
+335e8268 chore(github-actions): bump AndreasAugustin/actions-template-sync (#171)
+d643fbaf Added code and test for example component (#169)
+3fd67185 Update dependency score_rules_imagefs to v0.1.0 (#170)
+6b2b6091 Update dependency score_docs_as_code to v8.1.1 (#167)
+c0e27bf1 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#168)
+f1e6cd2b Update dependency score_bazel_cpp_toolchains to v1.0.3 (#165)
+22177015 Update dependency score_docs_as_code to v8.1.0 (#163)
+5983d982 Update dependency score_bazel_platforms to v1.1.0 (#164)
+d06476bc feat(toolchain): integrate QNX IFS toolchain centrally (#160)
+e7f037d4 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#161)
+8144f738 Update dependency score_bazel_cpp_toolchains to v1.0.2 (#159)
+b45126d0 chore: update deps (#157)
+32535a16 fix: make needextend local (#156)
+db3a6886 Update dependency score_bazel_cpp_toolchains to v1 (#153)
+8bf6aa39 chore(ci): align SCORE documentation workflows (#154)
+6d41b2d7 chore(bazel): align SCORE platform dependencies (#152)
+78cdb922 Update dependency score_docs_as_code to v8 (#150)
+25ca2811 (tag: v0.1.0) add release notes (#148)
+c1e64033 add security aou (#147)
+ee9379b6 chore(github-actions): bump the github-actions group with 3 updates (#145)
+798fe6db Harmonise navigation entries (#141)
+360b418a remove double declaration of comp (#144)
+4e9b5903 update module name (#143)
+076663e9 Add run-tool feature and fix copyright pre-commit (#142)
+ba33c5f0 Include failure initiators to dfa component template (#140)
+3d9cfd95 chore(docker): bump eclipse-score/devcontainer (#139)
+9a60c530 chore(docker): bump eclipse-score/devcontainer (#138)
+122d1775 Feature Template Update (#137)
+2222995f chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#136)
+8847babf Update dependency score_docs_as_code to v7.1.0 (#135)
+c5f3d04e Update dependency score_bazel_platforms to v1 (#134)
+44eb7bb1 Bugfix starting page (#133)
+e3470e3b Add Module folder to Structure (#132)
+a0d8793c Restructure starting page (#131)
+99f50550 Update dependency score_docs_as_code to v7.0.1 (#129)
+04662084 Update dependency score_docs_as_code to v7 (#128)
+46dc8097 chore(pre-commit): bump https://github.com/eclipse-score/tooling from 9baca712bb4d23fcb9b09c62aa38ddf9c9a038ee to 991cc658a4627251118f8241b00ffb1a3b1f0ab7 in the pre-commit group (#127)
+29c1ab5a chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#126)
+f6415b4c Update dependency score_process to v2.0.3 (#125)
+f7bcb0c4 Update dependency score_toolchains_rust to v0.10.0 (#124)
+aa7f63c9 adding score toolchains (#92)
+84b85e57 build: bump Bazel version to 8.7.0 (#123)
+a3d4e210 switch link direction between feat and logic_arc_int (#122)
+edc2225f use docs_bundles (#119)
+787b074a (tag: v0.0.1) chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#120)
+bf2ef268 chore(pre-commit): bump https://github.com/eclipse-score/tooling (#121)
+c9cc4f6e chore(docker): bump eclipse-score/devcontainer from v1.8.0 to v1.9.0 in /.devcontainer in the docker group across 1 directory (#118)
+00bbd4a2 Update dependency score_docs_as_code to v5 (#117)
+e80c08ef chore(pre-commit): bump https://github.com/eclipse-score/tooling (#116)
+ac5816b1 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#115)
+85b0466c chore(pre-commit): bump https://github.com/eclipse-score/tooling (#113)
+e83302af Update dependency score_docs_as_code to v4.6.1 (#111)
+33131346 Update dependency score_process to v2.0.2 (#114)
+f83688f5 update component request template to consider new FEP proposal (#112)
+063cd6cc chore(pre-commit): bump https://github.com/eclipse-score/tooling (#110)
+fb11a894 Bug fix: correct link in fdr checklist (#109)
+a0cd676e Add checkpoint to req inspection (#108)
+122a1533 Update dependency score_process to v2.0.1 (#106)
+26cf3c83 chore(docker): bump eclipse-score/devcontainer (#107)
+e177d146 chore(pre-commit): bump https://github.com/eclipse-score/tooling from 31ff8eee214e4e97ef8f5cb46e443273515b63ec to d5dbc41a14d28c8be40077735492bb7808e98fb9 in the pre-commit group across 1 directory (#104)
+25d54525 Remove invalid sec analysis and correct aou template (#101)
+50a781a7 remove duplicarted headers (#105)
+6c629078 chore(github-actions): bump eclipse-score/cicd-workflows/.github/workflows/daily.yml (#103)
+2c32741e chore(docker): bump eclipse-score/devcontainer (#89)
+9f780889 chore(github-actions): bump the github-actions group with 2 updates (#98)
+8af06997 Update dependency score_process to v2 (#100)
+89f6d965 Update dependency score_docs_as_code to v4.6.0 (#99)
+48ec58fd Move documentation to right folders and add user manual (#97)
+656934fa enhance implementation checklist (#95)
+410bc594 FMEA template bug fix and feature/component alignment (#96)
+2bf908eb chore(github-actions): bump the github-actions group across 1 directory with 3 updates (#90)
+f8a382ff Add codeowners (#94)
+ed2b99e4 Rename requirements links (#93)
+1cef60af Update GitHub workflows for improved scheduling and cleanup (#88)
+0e7d013a chore(deps): bump aspect_rules_lint from 1.10.2 to 2.6.0 (#76)
+f2068f6f chore(deps): bump rules_python from 1.8.3 to 2.0.2 (#77)
+1bf9d717 chore(deps): bump googletest from 1.17.0 to 1.17.0.bcr.2 (#54)
+a2241085 chore(deps): bump actions/checkout from 3 to 6 (#51)
+948311de update docu for single feature repo structure (#83)
+fbc128de increase bazel version to 8.6 (#80)
+1ac802c3 fix: update test work product references (#81)
+4f903b2a add detail design warning (#79)
+7b977329 change document structure and unhidden documents (#78)
+61d0c81c update safety analysis template (#74)
+08cb1fb7 chore: hotfix/fix bazel deps (#71)
+b2c18b45 chore(deps): bump the all-in-one group across 1 directory with 4 updates (#66)
+99e38cb5 chore(deps): bump eclipse-score/devcontainer (#60)
+5c2ab601 chore(deps): bump the all-in-one group across 1 directory with 7 updates (#68)
+68bee7af increase copyright year (#70)
+baacd991 Feat: Upgrade deps (#67)
+b3d3e650 rename folders according to score definition (#69)
+158bd577 add documentation examples (#58)
+e4c7dfff Load user settings in bazel (#55)
+fef9cda4 chore(deps): bump eclipse-score/devcontainer (#56)
+1a60a832 Add reuse to pre commit hooks (#49)
+bca97363 chore(ci): pin cicd-workflows reusable workflows to commit SHA (#47)
+bb53b578 Add sync workflow (#46)
+4b96cec3 locking: enforce Bzlmod lockfile consistency (#44)
+00bd6a64 tests: separate UT and CIT/FIT (#42)
+092be5c4 Update bazel modules (#38)
+1552d9d6 gitlint: Use gitlint from score (#35)
+3bde60cc Update Bazel modules (#34)
+480877e6 Docs-as-Code 1.0.1 Upgrade (#32)
+4a56c1ba Update LICENSE and NOTICE files (#29)
+9109c3b2 update gitlint, docs and rules_python (#28)
+bb0daa49 license: uplift (#26)
+5f1a446f template: bug (#24)
+b517d877 Dcalavrezo target (#21)
+3cc2910f template: bug (#20)
+fb194b54 docs: permissions (#19)
+0fd7e3ed template: added missing permissions to workflows (#18)
+e04e512b template: added docs workflows (#17)
+7f364c88 template: integrate docs-as-code (#15)
+fe3a7b8d infra: Add starpls and basedpyright (#14)
+2fcb43a0 dash: rename of module (#13)
+c9b18741 template: added formatting checker (#11)
+46603aa5 cicd: integrated reusable workflows
+0586e400 Update cr_checker version (#7)
+b8cb888e ci: Removed docs workflows
+185cf85d Fix: README.md and  directory
+32b5df34 Merge pull request #1 from qorix-group/dcalavrezo_new_template
+a6e21db1 addressed PR comments
+69f21408 template: initial template</p>
+</section>
+<section id="build-the-documentation-clean-and-read-the-result">
+<h2>#9 Build the documentation clean and read the result<a class="headerlink" href="#build-the-documentation-clean-and-read-the-result" title="Link to this heading">#</a></h2>
+<p>Q: How many warnings does the build report?
+A: The build reports 1 warning: WARNING: For repository ‘rules_cc’, the root module requires module version <a class="reference external" href="mailto:rules_cc&#37;&#52;&#48;0&#46;2&#46;18">rules_cc<span>&#64;</span>0<span>&#46;</span>2<span>&#46;</span>18</a>, but got <a class="reference external" href="mailto:rules_cc&#37;&#52;&#48;0&#46;2&#46;25">rules_cc<span>&#64;</span>0<span>&#46;</span>2<span>&#46;</span>25</a> in the resolved dependency graph.</p>
+<p>Q: Where is the list written?
+A: It’s written to the console output (stderr)</p>
+<p>Q: Why do we delete _build first?
+A: We delete the _build directory to ensure a clean build environment, removing any previous build artifacts that might affect the current build results.
+The build process works incrementally. So stale artifacts from previous builds could lead to incorrect or misleading results if not removed.</p>
+<p>Q: Run pre-commit run –all-files and list the hooks it runs. For each hook: would a violation also make bazel run //:docs fail, or does only pre-commit find it?
+A: The pre-commit hooks are as follows:
+<a class="reference external" href="mailto:uwe&#37;&#52;&#48;ATGRZWN121869">uwe<span>&#64;</span>ATGRZWN121869</a>:~/contributor-training-fork$ pre-commit run –all-files
+fix end of files…………………………………………………Passed
+trim trailing whitespace………………………………………….Passed
+check that scripts with shebangs are executable……………………..Passed
+check that executables have shebangs……………………………….Passed
+check for added large files……………………………………….Passed
+Check and fix copyright headers with cr_checker……………………..Passed
+reuse lint-file………………………………………………….Passed
+yamlfmt…………………………………………………………Passed
+bazel mod tidy…………………………………………………..Passed
+bazel mod deps lockfile check……………………………………..Passed
+Only pre-commit finds these issues, and they do not cause the Bazel build for //:docs to fail.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Participants</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#progress">Progress</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bring-your-repository-up-to-date-with-its-upstream">#7 Bring your repository up to date with its upstream</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-documentation-clean-and-read-the-result">#9 Build the documentation clean and read the result</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/uwe-martin/contributor-training-fork/edit/main/docs/participants/uwe-martin.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1.
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
