@@ -2,5 +2,9 @@
   {
     "version": "main",
     "url": "https://uwe-martin.github.io/contributor-training-fork/main/"
+  },
+  {
+    "version": "pr-24",
+    "url": "https://uwe-martin.github.io/contributor-training-fork/pr-24/"
   }
 ]
