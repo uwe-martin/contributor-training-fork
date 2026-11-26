@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-[Module Name] Safety Manual
-===========================
+Training_Module Safety Manual
+=============================
 
 .. note:: Document header
 
