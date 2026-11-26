@@ -68,7 +68,7 @@ Functional Requirements
    :id: comp_req__component_example__heartbeat_status
    :reqtype: Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :derived_from: feat_req__example_feature__example_req
    :satisfied_by: comp__mod_temp_component_example_1
    :status: valid
