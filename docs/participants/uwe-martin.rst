@@ -37,6 +37,7 @@ Progress
 
 #7 Bring your repository up to date with its upstream
 -----------------------------------------------------
+
 Option 1 syncs changes of an additional remote to the local repository.
 Option 2 syncs two remote repositories without involving the local repository.
 Option 1 is for consuming updates from a repo one does not contribute back to.
@@ -296,6 +297,7 @@ a6e21db1 addressed PR comments
 
 #9 Build the documentation clean and read the result
 ----------------------------------------------------
+
 Q: How many warnings does the build report?
 A: The build reports 1 warning: WARNING: For repository 'rules_cc', the root module requires module version rules_cc@0.2.18, but got rules_cc@0.2.25 in the resolved dependency graph.
 
@@ -320,3 +322,11 @@ yamlfmt..................................................................Passed
 bazel mod tidy...........................................................Passed
 bazel mod deps lockfile check............................................Passed
 Only pre-commit finds these issues, and they do not cause the Bazel build for //:docs to fail.
+
+#10 Repair the defect branches
+------------------------------
+
+After building the branch defect/build-3, when looking at the module manuals in my browser,
+I see a lot of "Attention" boxes pointing out that placeholders have not been filled in.
+This is not caught by the build because the placeholders are valid syntax.
+Hence, the additional need to have "green" CI.
