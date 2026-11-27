@@ -41,16 +41,16 @@ Additional to the tailoring in the SW platform project as defined in the project
 
 - Excluded for this feature are additionally the following work products (and their related requirements):
 
-  - :need:`wp__feature_dfa` - Not needed. In the project meeting on 2026-10-20 we decided that the heartbeat feature has no
-    dependent failures, because it runs in a single process.
   - Tool qualification of the code generator - Not needed according to :need:`std_req__iso26262__support_6421`,
-    because the generated code is reviewed manually.
+    because the generated code is reviewed manually. Note: the specific code generator tool must be identified,
+    and the feasibility of manual review depends on the size and complexity of the generated code.
 
 Qualification of software components
 ====================================
 
-As required by ISO 26262-8 clause 12 (see its EXAMPLE), ``component_example`` is an in-house component already in
-service and is therefore qualified according to clause 12 before the heartbeat feature is released.
+As required by ISO 26262-8 clause 12, ``component_example`` is an in-house component.
+Qualification according to clause 12 requires evidence of field use in a comparable operational environment
+and documentation of its development process. This evidence must be provided before the heartbeat feature is released.
 
 
 Safety Work Products List
@@ -128,9 +128,9 @@ A summary of the status is also documented in the project's documentation manage
 
 See TBD.
 
-All review findings on the safety work products of this feature are closed within 24 hours of being raised.
+All review findings on the safety work products of this feature are tracked and assigned within 24 hours of being raised.
 
-Open point: TBD - clarify who performs the feature FMEA.
+Open point: Clarify who performs the feature FMEA. Owner: Safety Manager. Trigger: before the heartbeat feature safety plan is approved.
 
 Feature Requirements Status
 ---------------------------

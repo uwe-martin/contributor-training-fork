@@ -138,10 +138,11 @@ Heartbeat Requirements
    :id: comp_req__component_example__hb_missing
    :reqtype: Functional
    :security: NO
-   :safety: ASIL_B
+   :safety: QM
    :derived_from: feat_req__component_example__hb_supervision
    :satisfied_by: comp__mod_temp_component_example_1
    :status: valid
    :version: 1
 
-   The Component shall detect a missing heartbeat within two cycles.
+   The Component shall detect a missing heartbeat within two heartbeat periods,
+   where the heartbeat period is defined by the system configuration.
