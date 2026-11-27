@@ -47,7 +47,7 @@ jobs:
           NAME: ${{ inputs.name }}
         run: python3 .github/certificate/certificate.py "$NAME" "${{ github.actor }}" --output "certificate_${{ github.actor }}.pdf"
       - name: 📤 Upload the certificate
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: certificate
           path: certificate_${{ github.actor }}.pdf
