@@ -48,7 +48,7 @@ Basic needed software environment for the module development and usage:
 
 * **C++**: C++17 or later
 * **Rust**: 1.70 or later
-* **Build System**: Bazel 6.0 or later
+* **Build System**: Bazel 8.8.2 or later
 * **Operating Systems**: Linux, QNX
 
 Dependencies
