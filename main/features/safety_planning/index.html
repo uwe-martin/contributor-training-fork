@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>[Feature Name] Safety Work Products List &#8212; Module Template Project  documentation</title>
+    <title>Heartbeat Safety Work Products List &#8212; Module Template Project  documentation</title>
   
   
   
@@ -498,7 +498,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../safety_analysis/dfa.html">[Feature Name] Dependent Failure Analysis</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../safety_analysis/aou_requirements.html">[Feature Name] Assumptions of Use</a></li>
-<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">[Feature Name] Safety Work Products List</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Heartbeat Safety Work Products List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../security_planning/index.html">[Feature Name] Security Work Products List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../security_analysis/aou_requirements.html">[Feature Name] Security Assumptions of Use</a></li>
 </ul>
@@ -544,7 +544,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">[Feature Name]</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">[Feature Name] Safety Work Products List</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Heartbeat Safety Work Products List</span></li>
   </ul>
 </nav>
 </div>
@@ -561,17 +561,17 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="feature-name-safety-work-products-list">
-<h1>[Feature Name] Safety Work Products List<a class="headerlink" href="#feature-name-safety-work-products-list" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-12a0cd35">
+  <section id="heartbeat-safety-work-products-list">
+<h1>Heartbeat Safety Work Products List<a class="headerlink" href="#heartbeat-safety-work-products-list" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-6215620d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_example_safety_wp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">[Feature Name] Safety WPs</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Heartbeat Safety WPs</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
 <div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
@@ -623,10 +623,18 @@
 <ul class="simple">
 <li><p>Excluded for this feature are additionally the following work products (and their related requirements):</p>
 <ul>
-<li><p>&lt;work product/requirement&gt; - &lt;Argumentation why it is not needed or replaced by another work product or activity.&gt;</p></li>
+<li><p>Tool qualification of the code generator - Not needed according to <a class="external_link reference external" href="https://eclipse-score.github.io/process_description//main/standards/iso26262/iso26262.html#std_req__iso26262__support_6421">std_req__iso26262__support_6421</a>,
+because the generated code is reviewed manually. Note: the specific code generator tool must be identified,
+and the feasibility of manual review depends on the size and complexity of the generated code.</p></li>
 </ul>
 </li>
 </ul>
+</section>
+<section id="qualification-of-software-components">
+<h2>Qualification of software components<a class="headerlink" href="#qualification-of-software-components" title="Link to this heading">#</a></h2>
+<p>As required by ISO 26262-8 clause 12, <code class="docutils literal notranslate"><span class="pre">component_example</span></code> is an in-house component.
+Qualification according to clause 12 requires evidence of field use in a comparable operational environment
+and documentation of its development process. This evidence must be provided before the heartbeat feature is released.</p>
 </section>
 <section id="safety-work-products-list">
 <h2>Safety Work Products List<a class="headerlink" href="#safety-work-products-list" title="Link to this heading">#</a></h2>
@@ -704,7 +712,9 @@ documents and work products status have to go to “valid” (after the relevant
 <h3>Feature Documents Status<a class="headerlink" href="#feature-documents-status" title="Link to this heading">#</a></h3>
 <p>For all the work product documents the status can be seen by following the “Link to WP”.
 A summary of the status is also documented in the project’s documentation management plan.</p>
-<p>See &lt;add here the section reference to the documentation management plan&gt;</p>
+<p>See TBD.</p>
+<p>All review findings on the safety work products of this feature are tracked and assigned within 24 hours of being raised.</p>
+<p>Open point: Clarify who performs the feature FMEA. Owner: Safety Manager. Trigger: before the heartbeat feature safety plan is approved.</p>
 </section>
 <section id="feature-requirements-status">
 <h3>Feature Requirements Status<a class="headerlink" href="#feature-requirements-status" title="Link to this heading">#</a></h3>
@@ -769,6 +779,7 @@ A summary of the status is also documented in the project’s documentation mana
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tailoring">Tailoring</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qualification-of-software-components">Qualification of software components</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-work-products-list">Safety Work Products List</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-safety-package">Feature Safety Package</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-documents-status">Feature Documents Status</a></li>

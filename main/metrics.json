@@ -2,11 +2,11 @@
   "schema_version": "2",
   "generated_by": "sphinx_build",
   "overall_metrics": {
-    "total": 8,
+    "total": 11,
     "with_code_link": 1,
     "with_test_link": 0,
     "fully_linked": 0,
-    "with_code_link_pct": 12.5,
+    "with_code_link_pct": 9.090909090909092,
     "with_test_link_pct": 0.0,
     "fully_linked_pct": 0.0
   },
@@ -21,16 +21,16 @@
       "fully_linked_pct": 0.0
     },
     "comp_req": {
-      "total": 3,
+      "total": 4,
       "with_code_link": 1,
       "with_test_link": 0,
       "fully_linked": 0,
-      "with_code_link_pct": 33.33333333333333,
+      "with_code_link_pct": 25.0,
       "with_test_link_pct": 0.0,
       "fully_linked_pct": 0.0
     },
     "feat_req": {
-      "total": 1,
+      "total": 2,
       "with_code_link": 0,
       "with_test_link": 0,
       "fully_linked": 0,
@@ -39,7 +39,7 @@
       "fully_linked_pct": 0.0
     },
     "stkh_req": {
-      "total": 1,
+      "total": 2,
       "with_code_link": 0,
       "with_test_link": 0,
       "fully_linked": 0,
@@ -55,7 +55,59 @@
     "broken_references": []
   },
   "verification_metrics": {
+    "comp__mod_temp_component_example_3": {
+      "requirements": {
+        "status": {
+          "valid": 0,
+          "valid_inspected": 0,
+          "invalid": 0
+        },
+        "coverage": {
+          "fully_covered": 0,
+          "partially_covered": 0,
+          "not_covered": 0
+        }
+      },
+      "architecture": {
+        "status": {
+          "valid": 0,
+          "valid_inspected": 0,
+          "invalid": 0
+        },
+        "coverage": {
+          "fully_covered": 0,
+          "partially_covered": 0,
+          "not_covered": 0
+        }
+      }
+    },
     "comp__mod_temp_archex_sub_component_2": {
+      "requirements": {
+        "status": {
+          "valid": 1,
+          "valid_inspected": 0,
+          "invalid": 0
+        },
+        "coverage": {
+          "fully_covered": 0,
+          "partially_covered": 0,
+          "not_covered": 1
+        }
+      },
+      "architecture": {
+        "status": {
+          "valid": 0,
+          "valid_inspected": 0,
+          "invalid": 0
+        },
+        "coverage": {
+          "fully_covered": 0,
+          "partially_covered": 0,
+          "not_covered": 0
+        }
+      }
+    },
+    "comp__mod_temp_archex_sub_component_3": {
       "requirements": {
         "status": {
           "valid": 1,
@@ -110,14 +162,14 @@
     "comp__mod_temp_component_example_1": {
       "requirements": {
         "status": {
-          "valid": 2,
+          "valid": 3,
           "valid_inspected": 0,
           "invalid": 0
         },
         "coverage": {
           "fully_covered": 0,
           "partially_covered": 0,
-          "not_covered": 2
+          "not_covered": 3
         }
       },
       "architecture": {
@@ -134,58 +186,6 @@
       }
     },
     "comp__mod_temp_archex_sub_component_1": {
-      "requirements": {
-        "status": {
-          "valid": 1,
-          "valid_inspected": 0,
-          "invalid": 0
-        },
-        "coverage": {
-          "fully_covered": 0,
-          "partially_covered": 0,
-          "not_covered": 1
-        }
-      },
-      "architecture": {
-        "status": {
-          "valid": 0,
-          "valid_inspected": 0,
-          "invalid": 0
-        },
-        "coverage": {
-          "fully_covered": 0,
-          "partially_covered": 0,
-          "not_covered": 0
-        }
-      }
-    },
-    "comp__mod_temp_component_example_3": {
-      "requirements": {
-        "status": {
-          "valid": 0,
-          "valid_inspected": 0,
-          "invalid": 0
-        },
-        "coverage": {
-          "fully_covered": 0,
-          "partially_covered": 0,
-          "not_covered": 0
-        }
-      },
-      "architecture": {
-        "status": {
-          "valid": 0,
-          "valid_inspected": 0,
-          "invalid": 0
-        },
-        "coverage": {
-          "fully_covered": 0,
-          "partially_covered": 0,
-          "not_covered": 0
-        }
-      }
-    },
-    "comp__mod_temp_archex_sub_component_3": {
       "requirements": {
         "status": {
           "valid": 1,
