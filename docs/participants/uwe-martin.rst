@@ -303,3 +303,8 @@ The chain is as follows:
 :need:`wp__verification_module_ver_report` is the work product that contains the verification report.
 
 :need:`gd_temp__mod_ver_report` is the guideline for the module verification report.
+
+12 Find what the S-CORE project decided about it
+------------------------------------------------
+
+:need:`wp__verification_plan` needs to be updated.
