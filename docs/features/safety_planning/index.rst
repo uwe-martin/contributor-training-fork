@@ -14,12 +14,12 @@
 
 
 
-[Feature Name] Safety Work Products List
-########################################
+Heartbeat Safety Work Products List
+###################################
 
-.. document:: [Feature Name] Safety WPs
+.. document:: Heartbeat Safety WPs
    :id: doc__feature_example_safety_wp
-   :status: draft
+   :status: valid
    :version: 1
    :safety: ASIL_B
    :security: NO
@@ -41,7 +41,16 @@ Additional to the tailoring in the SW platform project as defined in the project
 
 - Excluded for this feature are additionally the following work products (and their related requirements):
 
-  - <work product/requirement> - <Argumentation why it is not needed or replaced by another work product or activity.>
+  - Tool qualification of the code generator - Not needed according to :need:`std_req__iso26262__support_6421`,
+    because the generated code is reviewed manually. Note: the specific code generator tool must be identified,
+    and the feasibility of manual review depends on the size and complexity of the generated code.
+
+Qualification of software components
+====================================
+
+As required by ISO 26262-8 clause 12, ``component_example`` is an in-house component.
+Qualification according to clause 12 requires evidence of field use in a comparable operational environment
+and documentation of its development process. This evidence must be provided before the heartbeat feature is released.
 
 
 Safety Work Products List
@@ -117,7 +126,11 @@ Feature Documents Status
 For all the work product documents the status can be seen by following the "Link to WP".
 A summary of the status is also documented in the project's documentation management plan.
 
-See <add here the section reference to the documentation management plan>
+See TBD.
+
+All review findings on the safety work products of this feature are tracked and assigned within 24 hours of being raised.
+
+Open point: Clarify who performs the feature FMEA. Owner: Safety Manager. Trigger: before the heartbeat feature safety plan is approved.
 
 Feature Requirements Status
 ---------------------------
